@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Кондитерских Изделий</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин Кондитерских Изделий</h1>
+        <nav>
+            <ul>
+                <li><a href="#cakes">Торты</a></li>
+                <li><a href="#pastries">Выпечка</a></li>
+                <li><a href="#candies">Конфеты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cakes" class="category">
+            <h2>Торты</h2>
+            <div class="product">
+                <input type="checkbox" id="cake1" value="Торт Шоколадный - 500 руб.">
+                <label for="cake1">
+                    <img src="cake1.jpg" alt="Торт 1">
+                    <h3>Торт Шоколадный</h3>
+                    <p>Цена: 500 руб.</p>
+                </label>
+                <input type="number" min="1" value="1" class="quantity" data-price="500">
+            </div>
+            <div class="product">
+                <input type="checkbox" id="cake2" value="Торт Фруктовый - 600 руб.">
+                <label for="cake2">
+                    <img src="cake2.jpg" alt="Торт 2">
+                    <h3>Торт Фруктовый</h3>
+                    <p>Цена: 600 руб.</p>
+                </label>
+                <input type="number" min="1" value="1" class="quantity" data-price="600">
+            </div>
+        </section>
+
+        <section id="pastries" class="category">
+            <h2>Выпечка</h2>
+            <div class="product">
+                <input type="checkbox" id="pastry1" value="Круассан - 150 руб.">
+                <label for="pastry1">
+                    <img src="pastry1.jpg" alt="Выпечка 1">
+                        <h3>Круассан</h3>
+                    <p>Цена: 150 руб.</p>
+                </label>
+                <input type="number" min="1" value="1" class="quantity" data-price="150">
+            </div>
+            <div class="product">
+                <input type="checkbox" id="pastry2" value="Пирожное - 200 руб.">
+                <label for="pastry2">
+                    <img src="pastry2.jpg" alt="Выпечка 2">
+                    <h3>Пирожное</h3>
+                    <p>Цена: 200 руб.</p>
+                </label>
+                <input type="number" min="1" value="1" class="quantity" data-price="200">
+            </div>
+        </section>
+
+        <section id="candies" class="category">
+            <h2>Конфеты</h2>
+            <div class="product">
+                <input type="checkbox" id="candy1" value="Шоколадные Конфеты - 300 руб.">
+                <label for="candy1">
+                    <img src="candy1.jpg" alt="Конфета 1">
+                    <h3>Шоколадные Конфеты</h3>
+                    <p>Цена: 300 руб.</p>
+                </label>
+                <input type="number" min="1" value="1" class="quantity" data-price="300">
+            </div>
+            <div class="product">
+                <input type="checkbox" id="candy2" value="Леденцы - 100 руб.">
+                <label for="candy2">
+                    <img src="candy2.jpg" alt="Конфета 2">
+                    <h3>Леденцы</h3>
+                    <p>Цена: 100 руб.</p>
+                </label>
+                <input type="number" min="1" value="1" class="quantity" data-price="100">
+            </div>
+        </section>
+
+        <h2>Корзина</h2>
+        <div id="cart"></div>
+        <button id="orderButton">Отправить заказ</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Магазин Кондитерских Изделий</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
